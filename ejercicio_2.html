@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ganancias</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="css/ganancias.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+</head>
+<body>
+  <div class="contenedor_sucursal">
+    <form>
+     <div class="form-group">
+      
+        <label>Ingrese la Sucursal:</label> <br>
+        <select id="txtsucursales" >
+     <option value="Sucursal 1">Sucursal 1</option>
+    <option value="Sucursal 2">Sucursal 2</option>
+    <option value="Sucursal 3">Sucursal 3</option>
+        </select>
+     </div>
+
+     <div class="form-group" >
+       
+        <label>Numero de Empleados:</label> <br>
+        <input type="number" min="10" max="" step="1" id="txtempleados" name="empleados"
+        class="form-control " placeholder="Empleados..." pattern="\d+">
+     </div>
+
+     <div class="form-group" >
+        <label>Ingrese sus ganancias:</label> <br>
+        <input id="txtganancias" class="form-control" type="number" min="1000" max="" onkeypress="return event.charCode >= 48" placeholder="Ganancias..."> <br>
+     </div>    
+     
+    
+        <button id="adicionar" class="btn btn-success" type="button" >Guardar</button>
+
+    <button type="button" class="btn btn-success" data-toggle="collapse" id="imprimir" onclick="Imprimir()">Imprimir</button>
+    
+    </div>
+  </form>
+  
+  
+  
+
+    <div id="adicionados"></div>
+  
+  <table  id="mytable" class="table table-bordered table-hover " >  
+    <tr>
+      <th>SucursalL</th>
+      <th>Empleados</th>
+      <th>Ganancias</th>
+      <th>Eliminar</th>
+      
+    </tr>
+  </table>
+  
+  </div>
+
+  <script src="js/ganancias.js"></script>
+</body>
+</html>

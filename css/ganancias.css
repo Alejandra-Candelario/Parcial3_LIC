@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    padding:50px 35px;
+    background-color: thistle;
+}
+
+.contenedor_sucursal{
+    float: left;
+    height: 450px;
+  padding: 30px;
+    
+    width: 30%;
+    
+
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    
+}
+
+
+#adicionar{
+    display: inline-block;
+  padding: 10px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px #999;
+  
+  
+}
+
+#adicionar:hover{background-color: #3e8e41}
+#adicionar:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+
+  #imprimir{
+    display: inline-block;
+  padding: 10px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px #999;
+  
+  
+}
+  #imprimir:hover{background-color: rgb(230, 89, 89)}
+#imprimir:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  
+
+ input[type=text], select {
+    width: 100%;
+    padding: 6px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  
+  /*.col-25 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+  }*/
+  
+  /* Clear floats after the columns */
+  .form-group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .contenedor_sucursal, .form-group {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+.tblSucursales{
+  float: left;
+  height: 750px;
+padding: 30px;
+  
+  width: 30%;
+  
+  border-radius: 5px;
+  background-color: #f2f2f2;
+
+}
+
+#mytable{
+  width: 50%
+  
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  float: right;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: rgb(247, 54, 189);
+  color: white;
+}
+

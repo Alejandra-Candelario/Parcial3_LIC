@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 15px 20px;
+    background-color: rgb(133, 189, 189);
+}
+
+.container{
+    float: left;
+    height: 600px;
+    padding: 30px;  
+    width: 30%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+
+.notas:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+#tabla{
+    width: 50%
+     
+  }
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    float: right;
+    
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: rgb(153, 56, 245);
+    color: white;
+  }
+
+  #agregados{
+      float: right;
+  }
+
+  #agregar{
+    display: inline-block;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:#00d973;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px #999;
+  }
+
+  #agregar:hover{background-color:#07be69}
+#agregar:active {
+    background-color:#07be69;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+
+  #imprimir{
+    display: inline-block;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:#00c69f;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px #999;
+  }
+
+  #imprimir:hover{background-color: #05b390}
+#imprimir:active {
+    background-color: #05b390;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .container, .notas {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
